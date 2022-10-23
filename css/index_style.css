@@ -1,0 +1,252 @@
+*
+{
+    box-sizing: border-box !important;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar-brand
+{
+    color: #ff305b !important;
+    font-size: 1.5rem !important;
+}
+.navbar-nav .active a
+{
+    color: #ff305b !important;
+}
+.nav-link
+{
+    font-family: 'Roboto', sans-serif !important;
+    transition: all 0.4s ease-in-out !important;
+}
+.collapse .nav-item:hover .nav-link
+{
+    color: #ff305b !important;
+    cursor: pointer !important;
+}
+.bg-image
+{
+    background-image: url('../images/slider-01.jpg') !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+.home-container
+{
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+.home-content h5
+{
+    font-size: 1.625rem !important;
+}
+.home-content h4
+{
+    margin-bottom: 0.625rem !important;
+}
+.home-content h1
+{
+    color: #ff305b !important;
+    font-size: 4.375rem !important;
+    margin-bottom: 0.625rem !important;
+}
+.home-content h5::after
+{
+    content: ' |';
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes move 
+{
+    0%{content: ' D|';}
+    2.7%{content: ' De|';}
+    5.3%{content: ' Dev|';}
+    7.9%{content: ' Deve|';}
+    10.5%{content: ' Devel|';}
+    13.1%{content: ' Develo|';}
+    15.8%{content: ' Develop|';}
+    18.5%{content: ' Develope|';}
+    21%{content: ' Developer|';}
+    23.7%{content: ' Developer |';}
+    26.4%{content: ' Developer|';}
+    29.1%{content: ' Develope|';}
+    31.8%{content: ' Develop|';}
+    34.5%{content: ' Develo|';}
+    37.2%{content: ' Devel|';}
+    39.9%{content: ' Deve|';}
+    42.6%{content: ' Dev|';}
+    45.2%{content: ' De|';}
+    47.9%{content: ' D|';}
+    50.5%{content: ' |';}
+    53.2%{content: ' D|';}
+    55.9%{content: ' De|';}
+    58.5%{content: ' Des|';}
+    61.2%{content: ' Desi|';}
+    63.8%{content: ' Desig|';}
+    66.5%{content: ' Design|';}
+    69.2%{content: ' Designe|';}
+    71.9%{content: ' Designer|';}
+    74.5%{content: ' Designer |';}
+    77.2%{content: ' Designer|';}
+    79.9%{content: ' Designe|';}
+    82.6%{content: ' Design|';}
+    85.3%{content: ' Desig|';}
+    88%{content: ' Desi|';}
+    91%{content: ' Des|';}
+    94%{content: ' De|';}
+    97%{content: ' D|';}
+    100%{content: ' |';}
+}
+.profile
+{
+    box-shadow: 0px 0px 0px 8px #555;
+    border-radius: .1rem;   
+}
+@media screen and (max-width:991px)
+{
+    .profile
+    {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0rem;
+    }
+    .profile-pic img
+    {
+        width: 100% !important;
+    }
+    .profile-pic
+    {
+        transform: none;
+    }
+    .testimonial .img-center 
+    {
+        text-align: center !important;
+    }
+    
+}
+.profile-pic
+{
+    transform: translate(1rem,1rem);
+}
+.profile-overlay
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 100%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.profile-pic:hover .profile-overlay
+{
+    top: 0%;
+    opacity: 1;
+}
+a i
+{
+    transition: all 0.3s ease-in-out;
+}
+.profile-overlay a:hover i, .footer a:hover i
+{
+    color: #ff305b !important;
+}
+.prg-border
+{
+    border-bottom: 0.1rem dotted black;
+}
+.line
+{
+    width: 75px;
+    height: 1px;
+    background-color: #ff305b;
+    margin-top: 4px !important;
+}
+.line2
+{
+    width: 150px;
+    height: 1px;
+    background-color: #ff305b;
+    margin-top: 4px !important;
+}
+.services-container, .statics-container
+{
+    background-color: #f1f1f1;
+}
+.hov-bgWhite:hover
+{
+    background-color: #fff;
+}
+.services-container i
+{
+    transition: all 1s ease-in-out;
+}
+.hov-bgWhite:hover .services-container i
+{
+    transform: scale(1.2,1.2) !important;
+}
+.image-overlay
+{
+    
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0px;
+}
+
+.item-border
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.item-pic:hover .item-border
+{
+    opacity: 1;  
+}
+.portfolio-container .nav-pills .nav-link.active, .portfolio-container .nav-pills .show>.nav-link, .card-hover:hover, .card-hover:hover i
+{
+    color: #ff305b !important;
+    background-color: transparent !important;
+    text-decoration: none !important;
+}
+.card-hover
+{
+    color: #333 !important;
+}
+.bg-linear
+{
+    background: linear-gradient(135deg, #ff305b 16%,#f1f1f1 16% 100%);
+    border-radius: 5px;
+    padding: 2rem 1rem !important;
+}
+.carousel-indicators li {
+    
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    border: 1px solid #ff305b !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+    height: 10px !important;
+    margin: 0 3px !important;
+    width: 10px !important;
+    opacity: 1 !important;
+}
+.carousel-indicators .active
+{
+    background: #ff305b none repeat scroll 0 0 !important;
+    border-radius: 10px !important;
+    padding: 4px 12px !important;
+}
+.testimonial a
+{
+    color: #777777 !important;
+    font-size: 15px;
+}
+.testimonial h3
+{
+    color: #333 !important;
+}
+.star-gold
+{
+    color: #f1c30d !important;
+}
